@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>
-      var url = document.URL.substring(18, document.URL.length)
-      document.getElementById("frame").innerHTML = "<frame rows='100%' src='https:/\/\scratchx.org/\?url=" + url + "#scratch'></frame>";
-    </script>
+    
   </head>
-  <frameset id="frame">
-    <frame rows="100%" src="">
-      
-    </frame>
-  </frameset>
+  <body>
+    <style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    </style>
+    <object type="application/x-shockwave-flash" data="/extdir.swf" width="100%" height="100%" id="scratch" style="visibility: visible;">
+      <param name="allowscriptaccess" value="always">
+      <param name="allowfullscreen" value="false">
+      <param name="wmode" value="direct">
+      <param name="menu" value="false">
+    </object>
+  </body>
 </html>
