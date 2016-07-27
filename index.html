@@ -19,12 +19,13 @@
 <body>
 <div id="head" style="visibility: hidden;"></div>
 <div id="scratchx">
-  <embed id="scratch" src="http://scratchx.org/#scratch" width="100%" height="100%" style="visibility: visible;">
+  <embed id="scratch" src="http://scratchx.org/#scratch" width="100%" height="100%" style="visibility: hidden;">
 </div>
   <script>
-  var mVar = setTimeout(myFunction, 3000);
+  var mVar = setTimeout(myFunction, 1000);
   function myFunction() {
   document.getElementById("head").style.visibility = "visible";
+  document.getElementById("scratch").style.visibility = "visible";
   }
 </script>
 </body>
