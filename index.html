@@ -71,7 +71,7 @@
 </head>
 <body>
   <div id="head">
-    <div style="float: right;color: #fcfcfc;margin-top:6.5px;"><span id="myBtn">Save</span></div>
+    <div style="float: right;color: #fcfcfc;margin-top:6.5px;"><span id="myBtn">Load</span></div>
   </div>
   <div id="myModal" class="modal">
 
@@ -80,11 +80,11 @@
     <span class="close">×</span>
     <h1>Load Your Project</h1>
     <p style="margin-top: 0;">Using your email and a URL</p>
-    <form onSubmit="load()"> 
+    <form> 
       <input type="email" placeholder="yourname@example.com">
       <input type="text" id="url" placeholder="http://yourdomain.com/yourprojectname.sbx">
-      <input type="submit" value="Load">
-    </form>
+      <button>Load</button>
+    </form onclick="load()">
   </div>
 
 </div>
@@ -119,7 +119,7 @@ window.onclick = function(event) {
 }
 function load() {
   var var1 = document.getElementById("url").value;
-  document.getElementById("scratchx").innerHTML = "<embed id='scratchx' src='http://scratchx.org/?url=" + url + "' width='100%' height='100%' style='visibility: visible;'>";
+  document.getElementById("scratchx").innerHTML = "<embed id='scratchx' src='http://scratchx.org/?url=" + url + "#scratch' width='100%' height='100%' style='visibility: visible;'>";
 }
 </script>
 </body>
